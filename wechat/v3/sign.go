@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-pay/gopay"
-	"github.com/go-pay/gopay/pkg/util"
-	"github.com/go-pay/gopay/pkg/xlog"
-	"github.com/go-pay/gopay/pkg/xpem"
+	"github.com/pilafusama/gopay"
+	"github.com/pilafusama/gopay/pkg/util"
+	"github.com/pilafusama/gopay/pkg/xlog"
+	"github.com/pilafusama/gopay/pkg/xpem"
 )
 
 // Deprecated

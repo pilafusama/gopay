@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-pay/gopay"
-	"github.com/go-pay/gopay/pkg/util"
-	"github.com/go-pay/gopay/pkg/xhttp"
-	"github.com/go-pay/gopay/pkg/xlog"
-	"github.com/go-pay/gopay/pkg/xpem"
+	"github.com/pilafusama/gopay"
+	"github.com/pilafusama/gopay/pkg/util"
+	"github.com/pilafusama/gopay/pkg/xhttp"
+	"github.com/pilafusama/gopay/pkg/xlog"
+	"github.com/pilafusama/gopay/pkg/xpem"
 )
 
 // ClientV3 微信支付 V3

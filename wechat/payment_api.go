@@ -21,10 +21,10 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/go-pay/gopay"
-	xaes "github.com/go-pay/gopay/pkg/aes"
-	"github.com/go-pay/gopay/pkg/util"
-	"github.com/go-pay/gopay/pkg/xhttp"
+	"github.com/pilafusama/gopay"
+	xaes "github.com/pilafusama/gopay/pkg/aes"
+	"github.com/pilafusama/gopay/pkg/util"
+	"github.com/pilafusama/gopay/pkg/xhttp"
 )
 
 // ParseNotifyToBodyMap 解析微信支付异步通知的结果到BodyMap（推荐）

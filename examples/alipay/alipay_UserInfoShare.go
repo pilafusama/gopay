@@ -1,8 +1,8 @@
 package alipay
 
 import (
-	"github.com/go-pay/gopay/alipay"
-	"github.com/go-pay/gopay/pkg/xlog"
+	"github.com/pilafusama/gopay/alipay"
+	"github.com/pilafusama/gopay/pkg/xlog"
 )
 
 func UserInfoShare() {

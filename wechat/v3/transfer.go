@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-pay/gopay"
+	"github.com/pilafusama/gopay"
 )
 
 // 发起批量转账API

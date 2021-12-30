@@ -15,13 +15,13 @@ import (
 	"fmt"
 	"reflect"
 
-	xaes "github.com/go-pay/gopay/pkg/aes"
-	"github.com/go-pay/gopay/pkg/util"
-	"github.com/go-pay/gopay/pkg/xhttp"
+	xaes "github.com/pilafusama/gopay/pkg/aes"
+	"github.com/pilafusama/gopay/pkg/util"
+	"github.com/pilafusama/gopay/pkg/xhttp"
 )
 
 // Deprecated
-// 推荐使用：github.com/go-pay/wechat-sdk
+// 推荐使用：github.com/pilafusama/wechat-sdk
 // Code2Session 获取微信小程序用户的OpenId、SessionKey、UnionId
 //	appId:APPID
 //	appSecret:AppSecret
@@ -38,7 +38,7 @@ func Code2Session(ctx context.Context, appId, appSecret, wxCode string) (session
 }
 
 // Deprecated
-// 推荐使用：github.com/go-pay/wechat-sdk
+// 推荐使用：github.com/pilafusama/wechat-sdk
 // GetAppletAccessToken 获取微信小程序全局唯一后台接口调用凭据(AccessToken:157字符)
 //	appId:APPID
 //	appSecret:AppSecret
@@ -54,7 +54,7 @@ func GetAppletAccessToken(ctx context.Context, appId, appSecret string) (accessT
 }
 
 // Deprecated
-// 推荐使用：github.com/go-pay/wechat-sdk
+// 推荐使用：github.com/pilafusama/wechat-sdk
 // DecryptOpenDataToStruct 解密开放数据到结构体
 //	encryptedData：包括敏感数据在内的完整用户信息的加密数据，小程序获取到
 //	iv：加密算法的初始向量，小程序获取到
@@ -99,7 +99,7 @@ func DecryptOpenDataToStruct(encryptedData, iv, sessionKey string, beanPtr inter
 }
 
 // Deprecated
-// 推荐使用：github.com/go-pay/wechat-sdk
+// 推荐使用：github.com/pilafusama/wechat-sdk
 // GetAppletPaidUnionId 微信小程序用户支付完成后，获取该用户的 UnionId，无需用户授权。
 //	accessToken：接口调用凭据
 //	openId：用户的OpenID

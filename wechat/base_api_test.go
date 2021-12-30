@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-pay/gopay"
-	"github.com/go-pay/gopay/pkg/util"
-	"github.com/go-pay/gopay/pkg/xlog"
+	"github.com/pilafusama/gopay"
+	"github.com/pilafusama/gopay/pkg/util"
+	"github.com/pilafusama/gopay/pkg/xlog"
 )
 
 func TestClient_UnifiedOrder(t *testing.T) {

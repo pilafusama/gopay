@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/go-pay/gopay"
-	"github.com/go-pay/gopay/pkg/xlog"
+	"github.com/pilafusama/gopay"
+	"github.com/pilafusama/gopay/pkg/xlog"
 )
 
 var (

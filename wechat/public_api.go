@@ -8,7 +8,7 @@ package wechat
 import (
 	"context"
 
-	"github.com/go-pay/gopay/pkg/xhttp"
+	"github.com/pilafusama/gopay/pkg/xhttp"
 )
 
 // GetPublicUserInfo 获取用户基本信息（微信公众号）

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-pay/gopay"
+	"github.com/pilafusama/gopay"
 )
 
 // 创建订单（Create order）

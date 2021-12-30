@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-pay/gopay"
+	"github.com/pilafusama/gopay"
 )
 
 // 创单结单合并API
