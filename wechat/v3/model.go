@@ -1429,15 +1429,22 @@ type ComplaintListItem struct {
 	ComplaintState        string                `json:"complaint_state"`                // 投诉单状态, PENDING：待处理, PROCESSING：处理中, PROCESSED：已处理完成
 	PayerPhone            string                `json:"payer_phone,omitempty"`          // 投诉人联系方式。该字段已做加密处理
 	ComplaintOrderInfo    []*ComplaintOrderInfo `json:"complaint_order_info,omitempty"` // 投诉单关联订单信息
-	ComplaintFullRefunded bool                  `json:"complaint_full_refunded"`        // 投诉单下所有订单是否已全部全额退款
-	IncomingUserResponse  bool                  `json:"incoming_user_response"`         // 投诉单是否有待回复的用户留言
-	UserComplaintTimes    int                   `json:"user_complaint_times"`           // 用户投诉次数
+	ComplaintMediaList    []*ComplaintMediaInfo `json:"complaint_media_list"`
+	ComplaintFullRefunded bool                  `json:"complaint_full_refunded"` // 投诉单下所有订单是否已全部全额退款
+	IncomingUserResponse  bool                  `json:"incoming_user_response"`  // 投诉单是否有待回复的用户留言
+	UserComplaintTimes    int                   `json:"user_complaint_times"`    // 用户投诉次数
+	ProblemDescription    string                `json:"problem_description"`
 }
 
 type ComplaintOrderInfo struct {
 	TransactionId string `json:"transaction_id"` // 投诉单关联的微信订单号
 	OutTradeNo    string `json:"out_trade_no"`   // 投诉单关联的商户订单号
 	Amount        int    `json:"amount"`         // 订单金额，单位（分）
+}
+
+type ComplaintMediaInfo struct {
+	MediaType string   `json:"media_type"`
+	MediaUrl  []string `json:"media_url"`
 }
 
 type ComplaintDetail struct {
