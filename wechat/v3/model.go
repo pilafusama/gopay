@@ -1456,9 +1456,11 @@ type ComplaintDetail struct {
 	PayerPhone            string                `json:"payer_phone,omitempty"`          // 投诉人联系方式。该字段已做加密处理
 	PayerOpenid           string                `json:"payer_openid"`                   // 投诉人在商户appid下的唯一标识
 	ComplaintOrderInfo    []*ComplaintOrderInfo `json:"complaint_order_info,omitempty"` // 投诉单关联订单信息
-	ComplaintFullRefunded bool                  `json:"complaint_full_refunded"`        // 投诉单下所有订单是否已全部全额退款
-	IncomingUserResponse  bool                  `json:"incoming_user_response"`         // 投诉单是否有待回复的用户留言
-	UserComplaintTimes    int                   `json:"user_complaint_times"`           // 用户投诉次数
+	ComplaintMediaList    []*ComplaintMediaInfo `json:"complaint_media_list"`
+	ComplaintFullRefunded bool                  `json:"complaint_full_refunded"` // 投诉单下所有订单是否已全部全额退款
+	IncomingUserResponse  bool                  `json:"incoming_user_response"`  // 投诉单是否有待回复的用户留言
+	UserComplaintTimes    int                   `json:"user_complaint_times"`    // 用户投诉次数
+	ProblemDescription    string                `json:"problem_description"`
 }
 
 type ComplaintNegotiationHistory struct {
