@@ -1427,6 +1427,7 @@ type ComplaintListItem struct {
 	ComplaintTime         string                `json:"complaint_time"`                 // 投诉时间, 例如：2015-05-20T13:29:35.120+08:00表示北京时间2015年05月20日13点29分35秒
 	ComplaintDetail       string                `json:"complaint_detail"`               // 投诉的具体描述
 	ComplaintState        string                `json:"complaint_state"`                // 投诉单状态, PENDING：待处理, PROCESSING：处理中, PROCESSED：已处理完成
+	ComplaintedMchid      string                `json:"complainted_mchid,omitempty"`    // 被诉商户号
 	PayerPhone            string                `json:"payer_phone,omitempty"`          // 投诉人联系方式。该字段已做加密处理
 	ComplaintOrderInfo    []*ComplaintOrderInfo `json:"complaint_order_info,omitempty"` // 投诉单关联订单信息
 	ComplaintMediaList    []*ComplaintMediaInfo `json:"complaint_media_list"`
