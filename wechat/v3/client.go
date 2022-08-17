@@ -64,7 +64,7 @@ func (c *ClientV3) AutoVerifySign() (err error) {
 	c.wxPublicKey = pubKey
 	c.WxSerialNo = wxSerialNo
 	c.autoSign = true
-	go c.autoCheckCertProc()
+	//go c.autoCheckCertProc() 关掉自动轮询
 	return
 }
 
